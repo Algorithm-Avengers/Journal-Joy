@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+
+    <style>
+        body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          margin: 0;
+          background-color: #47379F; /* Adjust the background color as needed */
+        }
+    
+
+      .form-container {
+        max-width: 400px;
+        border: 2px solid #edf2f7; /* Use the border color of your choice */
+        border-radius: 20px;
+        background-color: #fff; /* Use the background color of your choice */
+        opacity: 0.9;
+        margin: 8px;
+      }
+    </style>
+  </head>
+  <body>   
+    <div>
+      <!-- Heading -->
+      <div class="text-center my-4"> 
+        <h3 class="text-4xl text-white font-bold">Journal Joy</h3>
+      </div>
+    </div>
+
+    <!-- Form Container-->
+    <div class="form-container">
+      <div class="flex justify-center my-4">
+        <h1 class="text-3xl text-gray-800 font-bold py-4">Welcome Back</h1>
+      </div>
+
+      <!-- Form -->
+      <div class="flex-col justify-center ">
+        <form>
+          <!-- Name -->
+          <div class="mb-2 px-4 py-4">
+            <label class="text-zinc-600 font-bold"> UserName</label>
+            <input
+              type="text"
+              class="border-2 rounded-2xl w-full px-2 py-2"
+              placeholder="Type you username" required autofocus
+            />
+          </div>
+
+          <!-- Password -->
+          <div class="mb-2 px-4 py-4">
+            <label class="text-zinc-600 font-bold">Password</label>
+            <input
+              type="password"
+              class="border-2 rounded-2xl w-full px-2 py-2"
+              placeholder="Type your password" required
+            />
+          </div>
+
+          <!-- Login to dashboard -->
+          <div class="mb-2 flex justify-center py-2">
+            <a href="">
+              <button class="border-2 rounded-2xl px-4 py-4 bg-indigo-800 text-white font-bold hover:bg-green-800" type="submit">
+                Login To Dashboard
+              </button>
+            </a>
+          </div>
+
+          <!-- Create Account Button -->
+          <div class="mb-2 flex justify-center py-1">
+            <a href="">
+              <button class="border-2 rounded-2xl px-4 py-4 bg-indigo-800 text-white font-bold hover:bg-green-800" type="submit">
+                Create Account
+              </button>
+            </a>
+          </div>
+          
+          <!-- Remember me Checkbox -->
+          <div class="mb-2 flex justify-center">
+            <input type="checkbox" placeholder="checkbox">
+            <label>Remember Me</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
